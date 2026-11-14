@@ -33,11 +33,23 @@ Installer le SDK .NET 10, puis executer depuis le dossier du projet :
 
 Application destinee a Windows. La disponibilite des mesures depend du materiel et des pilotes.
 
-## Licence
+## Distribution et licence
 
-Les informations de licence et les mentions des composants tiers seront ajoutees avant la publication publique.
+Liquid Glass Monitor est un logiciel libre et open source, distribue
+sous licence Mozilla Public License 2.0 (MPL-2.0).
 
-<!-- DEBUT GALERIE LIQUID GLASS MONITOR -->
+Son code source peut etre consulte, utilise, modifie et redistribue,
+y compris dans un cadre commercial, conformement aux conditions
+de la licence MPL-2.0.
+
+Les bibliotheques et composants tiers conservent leurs propres licences.
+Leur inventaire et les informations de conformite figurent dans
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+
+Le fichier [LICENSE](LICENSE) contient le texte de la MPL-2.0.
+
+La publication publique du depot et la distribution des executables
+Windows seront effectuees apres finalisation des verifications.
 
 ## Captures d'écran
 

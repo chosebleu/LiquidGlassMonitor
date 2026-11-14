@@ -35,11 +35,22 @@ Install the .NET 10 SDK, then run these commands from the project directory:
 
 Designed for Windows. Sensor availability depends on hardware and drivers.
 
-## License
+## Distribution and license
 
-License information and third-party notices will be added before public release.
+Liquid Glass Monitor is free and open-source software distributed
+under the Mozilla Public License 2.0 (MPL-2.0).
 
-<!-- DEBUT GALERIE LIQUID GLASS MONITOR -->
+Its source code may be used, modified, and redistributed, including
+for commercial purposes, subject to the MPL-2.0 license terms.
+
+Third-party libraries and components retain their respective licenses.
+See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)
+for the dependency inventory and compliance information.
+
+The [LICENSE](LICENSE) file contains the MPL-2.0 license text.
+
+Public repository release and Windows executable distribution will
+take place after the remaining checks are completed.
 
 ## Screenshots
 
