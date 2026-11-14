@@ -33,8 +33,16 @@ Onze modules integres possedent une correspondance de nom dans les
 sources PawnIO.Modules 0.1.6.
 
 Le module IsaBridgeEC.bin est present dans les sources archivees
-de LibreHardwareMonitorLib 0.9.6, mais son fichier source Pawn
-correspondant n'a pas encore ete identifie.
+de LibreHardwareMonitorLib 0.9.6.
+
+Un fichier source IsaBridgeEC.p a ete retrouve dans le depot officiel
+PawnIO.Modules. Son historique Git indique une introduction le
+2 novembre 2025, apres la publication de PawnIO.Modules 0.1.6
+du 13 septembre 2025.
+
+La correspondance exacte entre ce fichier source et le binaire
+IsaBridgeEC.bin integre a LibreHardwareMonitorLib 0.9.6
+n'est pas encore demontree.
 
 Les correspondances de noms ne garantissent pas l'identite exacte
 des binaires compiles.
