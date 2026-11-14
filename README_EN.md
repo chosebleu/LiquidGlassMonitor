@@ -28,8 +28,10 @@ It features a translucent glass-inspired interface and several system monitoring
 
 Install the .NET 10 SDK, then run these commands from the project directory:
 
-    dotnet restore LiquidGlassMonitor.csproj
-    dotnet build LiquidGlassMonitor.csproj -c Release
+```powershell
+dotnet restore LiquidGlassMonitor.csproj
+dotnet build LiquidGlassMonitor.csproj -c Release
+```
 
 ## Compatibility
 
@@ -49,8 +51,10 @@ for the dependency inventory and compliance information.
 
 The [LICENSE](LICENSE) file contains the MPL-2.0 license text.
 
-Public repository release and Windows executable distribution will
-take place after the remaining checks are completed.
+The source code is available in this repository.
+
+No precompiled Windows executable is officially distributed at this time.
+Third-party component licenses must be respected.
 
 ## Screenshots
 

@@ -26,8 +26,10 @@ Elle propose une interface inspiree du verre translucide et plusieurs modules de
 
 Installer le SDK .NET 10, puis executer depuis le dossier du projet :
 
-    dotnet restore LiquidGlassMonitor.csproj
-    dotnet build LiquidGlassMonitor.csproj -c Release
+```powershell
+dotnet restore LiquidGlassMonitor.csproj
+dotnet build LiquidGlassMonitor.csproj -c Release
+```
 
 ## Compatibilite
 
@@ -48,8 +50,10 @@ Leur inventaire et les informations de conformite figurent dans
 
 Le fichier [LICENSE](LICENSE) contient le texte de la MPL-2.0.
 
-La publication publique du depot et la distribution des executables
-Windows seront effectuees apres finalisation des verifications.
+Le code source est disponible dans ce depot.
+
+Aucun executable Windows precompile n'est distribue officiellement
+pour le moment. Les licences des composants tiers doivent etre respectees.
 
 ## Captures d'écran
 
