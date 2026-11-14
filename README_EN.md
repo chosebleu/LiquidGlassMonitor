@@ -1,3 +1,9 @@
+<!-- DEBUT BANNIERE LIQUID GLASS MONITOR -->
+<p align="center">
+  <img src="docs/images/LiquidGlassMonitor_Banniere.png" alt="Liquid Glass Monitor" width="100%">
+</p>
+<!-- FIN BANNIERE LIQUID GLASS MONITOR -->
+
 # Liquid Glass Monitor
 
 Hardware monitoring application for Windows.
@@ -32,3 +38,27 @@ Designed for Windows. Sensor availability depends on hardware and drivers.
 ## License
 
 License information and third-party notices will be added before public release.
+
+<!-- DEBUT GALERIE LIQUID GLASS MONITOR -->
+
+## Screenshots
+
+Explore the main features of Liquid Glass Monitor.
+
+### System monitoring
+
+![System monitoring](docs/screenshots/systeme.png)
+
+### Network monitoring
+
+![Network monitoring](docs/screenshots/reseau.png)
+
+### Customization
+
+![Customization](docs/screenshots/personnalisation.png)
+
+### Media player
+
+![Media player](docs/screenshots/multimedia.png)
+
+<!-- FIN GALERIE LIQUID GLASS MONITOR -->
