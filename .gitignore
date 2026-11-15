@@ -1,4 +1,4 @@
-﻿bin/
+bin/
 obj/
 publish/
 .vs/
@@ -18,3 +18,7 @@ publish/
 .env.*
 Sauvegardes/
 Icones_Reference/
+
+# Fichiers locaux non destines a la distribution
+/LICENSE-PROPRIETARY-DRAFT.txt
+/LiquidGlassMonitor_Icone_Grande_TEMP.ico
