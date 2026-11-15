@@ -24,6 +24,17 @@ It features a translucent glass-inspired interface and several system monitoring
 - .NET 10
 - LibreHardwareMonitorLib
 
+
+## Documentation
+
+- [Installation guide (French / English)](INSTALLATION.md)
+- [Changelog (French / English)](CHANGELOG.md)
+- [French README](README.md)
+- [Graphical assets](ASSETS.md)
+- [Third-party notices](THIRD-PARTY-NOTICES.md)
+- [LibreHardwareMonitor modifications](MODIFICATIONS-LIBREHARDWAREMONITOR.md)
+- [PawnIO module rebuilding](PAWNIO-REBUILD.md)
+
 ## Building
 
 Install the .NET 10 SDK, then run these commands from the project directory:

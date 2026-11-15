@@ -22,6 +22,17 @@ Elle propose une interface inspiree du verre translucide et plusieurs modules de
 - .NET 10
 - LibreHardwareMonitorLib
 
+
+## Documentation
+
+- [Guide d'installation (français / anglais)](INSTALLATION.md)
+- [Historique des versions (français / anglais)](CHANGELOG.md)
+- [Version anglaise du README](README_EN.md)
+- [Ressources graphiques](ASSETS.md)
+- [Notices des composants tiers](THIRD-PARTY-NOTICES.md)
+- [Modifications de LibreHardwareMonitor](MODIFICATIONS-LIBREHARDWAREMONITOR.md)
+- [Reconstruction des modules PawnIO](PAWNIO-REBUILD.md)
+
 ## Compilation
 
 Installer le SDK .NET 10, puis executer depuis le dossier du projet :
