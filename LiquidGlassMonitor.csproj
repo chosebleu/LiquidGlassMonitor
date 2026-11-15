@@ -8,9 +8,15 @@
     <ApplicationIcon>LiquidGlassMonitor_Icone1.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.6" />
+    <ProjectReference Include="Dependencies\LibreHardwareMonitor-0.9.6\LibreHardwareMonitorLib\LibreHardwareMonitorLib.csproj" />
   </ItemGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Dependencies\**\*" />
+    <EmbeddedResource Remove="Dependencies\**\*" />
+    <Page Remove="Dependencies\**\*" />
+    <ApplicationDefinition Remove="Dependencies\**\*" />
+  </ItemGroup>
 </Project>

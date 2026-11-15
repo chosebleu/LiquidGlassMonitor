@@ -27,10 +27,25 @@ Elle propose une interface inspiree du verre translucide et plusieurs modules de
 Installer le SDK .NET 10, puis executer depuis le dossier du projet :
 
 ```powershell
-dotnet restore LiquidGlassMonitor.csproj
-dotnet build LiquidGlassMonitor.csproj -c Release
+dotnet restore LiquidGlassMonitor.csproj -r win-x64 -p:Platform=x64
+dotnet build LiquidGlassMonitor.csproj -c Release -r win-x64 -p:Platform=x64
 ```
 
+## Versions Windows
+
+Deux distributions Windows x64 sont preparees :
+
+- **Version legere (8,11 Mo)** : necessite le .NET 10 Desktop Runtime x64.
+- **Version autonome (68,23 Mo)** : contient le runtime .NET necessaire.
+
+Les deux versions peuvent etre utilisees sans installation classique :
+extraire l'archive ZIP dans un dossier, puis lancer `LiquidGlassMonitor.exe`.
+
+Les fichiers seront proposes dans la section Releases du depot
+lors de la publication officielle.
+
+Certaines mesures materielles peuvent necessiter des droits
+administrateur ou des pilotes specifiques.
 ## Compatibilite
 
 Application destinee a Windows. La disponibilite des mesures depend du materiel et des pilotes.

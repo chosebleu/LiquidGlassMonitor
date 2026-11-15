@@ -29,10 +29,25 @@ It features a translucent glass-inspired interface and several system monitoring
 Install the .NET 10 SDK, then run these commands from the project directory:
 
 ```powershell
-dotnet restore LiquidGlassMonitor.csproj
-dotnet build LiquidGlassMonitor.csproj -c Release
+dotnet restore LiquidGlassMonitor.csproj -r win-x64 -p:Platform=x64
+dotnet build LiquidGlassMonitor.csproj -c Release -r win-x64 -p:Platform=x64
 ```
 
+## Windows distributions
+
+Two Windows x64 distributions have been prepared:
+
+- **Lightweight version (8.11 MB)**: requires the .NET 10 Desktop Runtime x64.
+- **Self-contained version (68.23 MB)**: includes the required .NET runtime.
+
+Both versions can be used without a traditional installer:
+extract the ZIP archive into a folder and launch `LiquidGlassMonitor.exe`.
+
+The files will be made available in the repository's Releases section
+when the official release is published.
+
+Some hardware measurements may require administrator privileges
+or specific drivers.
 ## Compatibility
 
 Designed for Windows. Sensor availability depends on hardware and drivers.

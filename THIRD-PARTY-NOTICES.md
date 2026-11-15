@@ -1,69 +1,127 @@
 # Composants tiers - Liquid Glass Monitor
 
-Liquid Glass Monitor est distribue sous licence Mozilla Public License 2.0
-(MPL-2.0). Les composants tiers conservent leurs propres licences.
+Liquid Glass Monitor est distribue sous Mozilla Public License 2.0
+(MPL-2.0). Les composants tiers conservent leurs licences respectives.
 
 ## Dependances identifiees
 
-| Composant | Version | Licence | Sources |
-| --- | --- | --- | --- |
-| LibreHardwareMonitorLib | 0.9.6 | MPL-2.0 | https://github.com/LibreHardwareMonitor/LibreHardwareMonitor |
-| BlackSharp.Core | 1.0.7 | MPL-2.0 | https://github.com/Blacktempel/BlackSharp |
-| DiskInfoToolkit | 1.1.2 | MPL-2.0 | https://github.com/Blacktempel/DiskInfoToolkit |
-| RAMSPDToolkit-NDD | 1.4.2 | MPL-2.0 | https://github.com/Blacktempel/RAMSPDToolkit |
-| HidSharp | 2.6.4 | Apache-2.0 | https://github.com/IntergatedCircuits/HidSharp |
-| Mono.Posix.NETStandard | 1.0.0 | A confirmer | https://github.com/mono/mono |
-| System.IO.Ports | 10.0.3 | MIT | https://github.com/dotnet/runtime |
-| System.Management | 10.0.2 | MIT | https://github.com/dotnet/runtime |
-| System.IO.FileSystem.AccessControl | 5.0.0 | MIT | https://github.com/dotnet/runtime |
+| Composant | Version | Licence |
+| --- | --- | --- |
+| LibreHardwareMonitorLib | 0.9.6 | MPL-2.0 |
+| BlackSharp.Core | 1.0.7 | MPL-2.0 |
+| DiskInfoToolkit | 1.1.2 | MPL-2.0 |
+| RAMSPDToolkit-NDD | 1.4.2 | MPL-2.0 |
+| HidSharp | 2.6.4 | Apache-2.0 |
+| System.IO.Ports | 10.0.3 | MIT |
+| System.Management | 10.0.2 | MIT |
+| System.IO.FileSystem.AccessControl | 5.0.0 | MIT |
+| Microsoft.Win32.Registry | 5.0.0 | MIT |
+| System.Threading.AccessControl | 10.0.3 | MIT |
+| PawnIO.Modules | 0.2.2 | LGPL-2.1-or-later |
 
-## Modules PawnIO
+Les fichiers d'inclusion PawnIO portant l'identifiant SPDX 0BSD
+conservent leur licence propre.
 
-LibreHardwareMonitorLib 0.9.6 integre des modules PawnIO.
+## Mono.Posix
 
-Le depot PawnIO.Modules est publie sous licence GNU LGPL-2.1 :
+Les distributions Windows preparees ne contiennent plus :
 
-https://github.com/namazso/PawnIO.Modules
+- Mono.Posix.NETStandard.dll
+- MonoPosixHelper.dll
+- libMonoPosixHelper.dll
 
-Sources de la version 0.1.6 :
+Le retrait a ete teste sur Windows. La reference au paquet
+Mono.Posix.NETStandard a egalement ete retiree du projet
+LibreHardwareMonitorLib de la preparation GitHub.
 
-https://github.com/namazso/PawnIO.Modules/releases/tag/0.1.6
+## PawnIO.Modules
 
-Onze modules integres possedent une correspondance de nom dans les
-sources PawnIO.Modules 0.1.6.
+Les 12 modules PawnIO embarques correspondent aux binaires
+officiels de PawnIO.Modules 0.2.2 verifies par SHA256.
 
-Le module IsaBridgeEC.bin est present dans les sources archivees
-de LibreHardwareMonitorLib 0.9.6.
+Les sources correspondantes sont conservees dans le depot GitHub :
 
-Un fichier source IsaBridgeEC.p a ete retrouve dans le depot officiel
-PawnIO.Modules. Son historique Git indique une introduction le
-2 novembre 2025, apres la publication de PawnIO.Modules 0.1.6
-du 13 septembre 2025.
+ThirdParty/PawnIO.Modules-0.2.2/
 
-La correspondance exacte entre ce fichier source et le binaire
-IsaBridgeEC.bin integre a LibreHardwareMonitorLib 0.9.6
-n'est pas encore demontree.
+Une archive separee des sources a egalement ete preparee.
 
-Les correspondances de noms ne garantissent pas l'identite exacte
-des binaires compiles.
+La procedure de reconstruction et les limites de signature sont
+documentees dans PAWNIO-REBUILD.md.
 
-## Textes des licences
+La disponibilite des sources et de la documentation ne constitue
+pas, a elle seule, une validation definitive de conformite LGPL.
 
-- MPL-2.0 : https://www.mozilla.org/en-US/MPL/2.0/
-- LGPL-2.1 : https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
-- Apache-2.0 : https://www.apache.org/licenses/LICENSE-2.0
-- MIT : https://opensource.org/license/mit
+## Runtime Microsoft .NET
 
-## Points restant a verifier avant distribution
+La distribution autonome embarque des composants Microsoft
+.NET Runtime et Windows Desktop Runtime 10.0.14.
 
-- Confirmer la licence exacte de Mono.Posix.NETStandard 1.0.0.
-- Verifier les mentions de copyright et fichiers NOTICE applicables.
-- Inclure les textes de licence requis dans la distribution.
-- Verifier les obligations LGPL-2.1 relatives aux modules PawnIO,
-  notamment leur modification, remplacement et redistribution.
-- Confirmer les droits de redistribution des ressources graphiques.
-- Verifier les autres composants effectivement inclus dans le
-  paquet Windows final.
+Cinq bibliotheques representatives ont ete comparees aux paquets
+NuGet officiels 10.0.14 par SHA256 avec correspondance exacte.
+
+La distribution legere requiert une installation compatible
+de .NET 10 Desktop Runtime sur le poste utilisateur.
+
+Les documents officiels de licence .NET 10.0.14 sont fournis
+dans les dossiers Licences des deux distributions.
+
+## Documents de licence fournis
+- DotNet-Runtime-10.0.14-LICENSE.txt
+- DotNet-Runtime-10.0.14-THIRD-PARTY-NOTICES.txt
+- DotNet-WindowsDesktop-10.0.14-LICENSE.txt
+- HidSharp-LICENSE.txt
+- LibreHardwareMonitor-LICENSE.txt
+- LibreHardwareMonitor-THIRD-PARTY-NOTICES.txt
+- LICENSE-MPL-2.0.txt
+- Microsoft-NuGet-MIT-LICENSE.txt
+- Microsoft.Win32.Registry-LICENSE.txt
+- Microsoft.Win32.Registry-THIRD-PARTY-NOTICES.txt
+- PawnIO-Embedded-COPYING.txt
+- PawnIO-Modules-COPYING.txt
+- System.IO.FileSystem.AccessControl-LICENSE.txt
+- System.IO.FileSystem.AccessControl-THIRD-PARTY-NOTICES.txt
+- System.IO.Ports-THIRD-PARTY-NOTICES.txt
+- System.Management-THIRD-PARTY-NOTICES.txt
+- System.Threading.AccessControl-THIRD-PARTY-NOTICES.txt
+
+## Points restant a verifier avant publication
+
+- Verifier les ressources graphiques integrees aux binaires.
+- Verifier les composants effectivement redistribues.
+- Confirmer les obligations LGPL applicables aux modules PawnIO,
+  notamment les conditions pratiques de modification et remplacement.
+- Verifier les mentions de copyright et les notices applicables.
 
 Ce document est un inventaire de conformite en cours de finalisation.
-Il ne remplace pas les textes de licence des composants concernes.
+Il ne remplace pas les textes de licence originaux.
+
+### System.Memory 4.6.3
+
+- Licence : MIT
+- Projet : https://github.com/dotnet/maintenance-packages
+- Licence : https://licenses.nuget.org/MIT
+- Composant present dans la distribution Windows autonome.
+- Texte de licence : `Licences/System.Memory-MIT-LICENSE.txt`.
+
+### Microsoft.Windows.CsWin32 0.3.269
+
+- Licence declaree par NuGet : MIT.
+- Projet : https://github.com/Microsoft/CsWin32
+- NOTICE original conserve integralement :
+  `ThirdParty/Notices/Microsoft.Windows.CsWin32-0.3.269-NOTICE.txt`.
+- Ce composant est utilise comme outil de generation de code
+  pendant la compilation de LibreHardwareMonitorLib.
+
+### Pawn compiler 4.1.7152
+
+- Copyright : CompuPhase, 1997-2023.
+- Licence declaree : Apache License 2.0.
+- Exception specifique autorisant certaines formes de liaison statique et dynamique.
+- Attribution et informations sur les contributeurs conservees dans le document officiel `ThirdParty/Notices/Pawn-4.1.7152/NOTICE`.
+- Texte integral de la licence : `ThirdParty/Notices/Pawn-4.1.7152/LICENSE`.
+- Version examinee : 4.1.7152, release 1.el9.
+- Source officielle : https://www.compuphase.com/pawn/pawn.htm
+
+Le document NOTICE reference un fichier NOTICES supplementaire.
+Ce fichier n'etait pas present dans l'archive officielle 4.1.7152 examinee.
+Aucune copie de ce document n'a ete creee artificiellement.
